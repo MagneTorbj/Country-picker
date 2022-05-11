@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Country picker</title>
+<script src="countrypicker.js"></script>
+<link rel="stylesheet" href="stilark.css">
+</head>
+<body> 
+    <div align="center">
+        <h1> Valg av kontinent og land </h1>
+        <br/>Kontinent:
+        <select id="kontinent" name="kontinent" onchange="fyll_land()">
+            <option value="">-Velg Kontinent-</option>
+            <option value="Asia">Asia</option>
+                <option value="Africa">Afrika</option>
+                <option value="Europe">Europa</option>
+                <option value="North America">Nord Amerika</option>
+                <option value="South America">Sør Amerika</option>
+                <option value="Antarctica">Antarktis</option>
+                <option value="Australia">Australia</option>
+        </select>
+        <br>
+        <br> Land:
+        <select id="land" name="land">
+            <option value="">-Velg Land-</option>
+        </select>
+        <br/> <br/>
+        <input type="submit" value="Registrer" onclick="registrer()">
+    </div>
+    <br>
+    <h2 align="center">Registrerte land</h2>
+    <div id="registrerte" class="registrerte">
+    </div>
+    <br>
+    <div align="center"><input type="button" value="Fjern" onclick="fjern()"></div>
+    <footer>Laget av Magne</footer>
+</body>
+</html>
